@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <tile>test dsjnf</tile>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      <header>
+       <a herf="#" class="logo">Beast Romania</a>
+       <ul>
+       <li><a herf="#" class="active"> Home </a></li>
+       <li><a herf="#"> About </a></li>
+       <li><a herf="#"> Work </a></li>
+       <il><a href="index3.html" id="btns">Rules</a></il>
+       <li><a herf="#"> Tickets </a></li>
+      </a>
+       </ul>
+      </header>
+      <section>
+         <img src="stars.png" id="stars">
+         <img src="moon.png" id="moon">
+         <img src="mountains_behind.png" id="mountains_behind">
+         <h2 id="text">Moon Light</h2>
+         <a href="#sec" id="btn"> Explore</a>
+         <img src="mountains_front.png" id="mountains_front">
+      </section>
+      <div class="sec" id ="sec">
+         <h2>Parallax Scrolling Effects</h2>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+            ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the 
+             release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Why do we use it. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that 
+            it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors 
+            now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident,
+             sometimes on purpose (injected humour and the like).<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia laudantium cupiditate sed. Molestias 
+             quis unde facilis eum placeat doloremque praesentium laboriosam non quod labore. Possimus illo earum tempore nesciunt quo.<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+             Earum nulla harum reiciendis distinctio ad enim quasi corrupti velit perferendis iure perspiciatis ipsa omnis quas fugiat laudantium ex, deleniti ullam officia? <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati soluta commodi odit quaerat illo consectetur, aliquam veritatis doloremque quam non natus exercitationem quos fugit dolores accusantium animi quia. Odit, nulla.</p>
+         </div>
+
+         <script>
+         let stars = document.getElementById('stars');
+         let moon = document.getElementById('moon');
+         let mountains_behind = document.getElementById('mountains_behind');
+         let mountains_front = document.getElementById('mountains_front');
+
+         window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+         })
+         </script>
+   </body>
+</html>
